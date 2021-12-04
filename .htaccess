@@ -1,0 +1,16 @@
+# BEGIN WordPress
+# Dyrektywy zawarte mi?dzy "BEGIN WordPress" oraz "END WordPress"
+# s? generowane dynamicznie i powinny by? modyfikowane tylko za pomoc?
+# filtrów WordPressa. Zmiany dokonane bezpo?rednio tutaj b?d? nadpisywane.
+
+# END WordPress
+# protect wpconfig.php
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+Options -Indexes
+
+ErrorDocument 404 https://qelectro.pl/404.html
+ErrorDocument 403 https://qelectro.pl/403.html
+ErrorDocument 500 https://qelectro.pl/500.html
